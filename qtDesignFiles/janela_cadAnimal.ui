@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>562</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="frameCadAnimal">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="labelTituloCadAnimal">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>781</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Cadastro de Animais</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frameFormCadAnimal1">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>361</width>
+         <height>171</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="labelNome">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>361</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nome:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelTipo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>63</y>
+          <width>361</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tipo:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="inputNome">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>39</y>
+          <width>341</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:4px;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelRaca">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>115</y>
+          <width>361</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Raça:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="inputRaca">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>143</y>
+          <width>231</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:4px;</string>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cbTipo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>141</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frameFormCadAnimal2">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>270</y>
+         <width>441</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLineEdit" name="inputIdade">
+        <property name="geometry">
+         <rect>
+          <x>77</x>
+          <y>14</y>
+          <width>51</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:4px
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelIdade">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>61</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Idade:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cbTutor">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>10</y>
+          <width>141</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:4px;
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelTutor">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>8</y>
+          <width>49</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Tutor:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>450</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Voltar a Pagina Inicial</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>450</y>
+         <width>131</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Cadastrar Novo Animal</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>110</y>
+         <width>151</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/images/petIcon.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../../../Users/Rian Novais/Documents/PROJETOS/Pessoal/Exercicios e projetos PySide6/Exercicios PySide/sistema-petshop-pyside6/assets/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

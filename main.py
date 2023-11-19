@@ -3,10 +3,11 @@
 
 
 from PySide6.QtWidgets import QApplication
-from loginDialog import LoginDialog
+from janelaLogin import LoginDialog
+import sys
 
 if __name__ == "__main__":
-    app = QApplication()
+    app = QApplication(sys.argv)
     loginDialog = LoginDialog()
     loginDialog.exec()
     app.exec()

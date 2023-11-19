@@ -17,7 +17,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QDialog, QLabel, QLineEdit,
     QPushButton, QSizePolicy, QVBoxLayout, QWidget)
-import resources_qrc
+import assets.resources_qrc
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -65,7 +65,7 @@ class Ui_Dialog(object):
         self.labelImagem.setObjectName(u"labelImagem")
         self.labelImagem.setGeometry(QRect(150, 50, 90, 90))
         self.labelImagem.setMinimumSize(QSize(90, 90))
-        self.labelImagem.setStyleSheet(u"background-image:url(:/assets/userIcon.png);\n"
+        self.labelImagem.setStyleSheet(u"background-image:url(:/images/userIcon.png);\n"
 "background-repeat:no-repeat;")
         self.btnRegistrar = QPushButton(self.widgetLogin)
         self.btnRegistrar.setObjectName(u"btnRegistrar")

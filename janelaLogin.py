@@ -1,7 +1,7 @@
 from qtDesignFiles.janela_login import Ui_Dialog #importa do arquivo .py que veio do arquivo .UI gerado pelo QTDesigner
-from PySide6.QtWidgets import QApplication, QDialog
+from PySide6.QtWidgets import QDialog
+from PySide6.QtCore import Slot
 from PySide6.QtWidgets import QMessageBox
-import sys
 from utils import IsEmpty #importando a função isEmpty, que veio do modulo utils, onde existem funções, recorrentes no codigo.
 from janelaPrincipal import PrincipalWindow #importando a janela principal
 
@@ -43,6 +43,7 @@ class LoginDialog(QDialog, Ui_Dialog):
     #uma mensagem de erro na tela, mandando preencher os campos vazios, caso não esteja vazio. verifica se o login
     #e a senha estão corretos, caso esteja, fecha a janela de login e starta a janela principal, caso esteja errados
     #exibe a msgBox de erro na tela com a função respectiva
+    @Slot()
     def verificar_campos_login(self):
         if IsEmpty(self.inputLogin.text()):
             self.labelErroLogin.setText('preencha o campo de login')
@@ -53,16 +54,8 @@ class LoginDialog(QDialog, Ui_Dialog):
             if self.verificar_login_senha():
                 self.close()
                 self.janelaPrincipal.show()
-
             else:
                 self.mostrarMsgBoxErrorLogin()
 
-
-
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    loginDialog = LoginDialog()
-    loginDialog.exec()
-    app.exec()
 
 

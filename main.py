@@ -1,7 +1,5 @@
 #Sistema de um petshop, onde o usuario(admin) pode entrar no sistema, cadastrar clientes, animais, serviços
 #e listar-los
-
-
 from PySide6.QtWidgets import QApplication
 from janelaLogin import LoginDialog
 import sys

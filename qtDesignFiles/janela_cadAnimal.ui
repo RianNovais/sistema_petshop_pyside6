@@ -263,7 +263,7 @@
         </property>
        </widget>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="btnVoltar">
        <property name="geometry">
         <rect>
          <x>440</x>
@@ -276,7 +276,7 @@
         <string>Voltar a Pagina Inicial</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="btnCadAnimal">
        <property name="geometry">
         <rect>
          <x>580</x>
@@ -317,7 +317,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../../../../../Users/Rian Novais/Documents/PROJETOS/Pessoal/Exercicios e projetos PySide6/Exercicios PySide/sistema-petshop-pyside6/assets/resources.qrc"/>
+  <include location="../assets/resources.qrc"/>
  </resources>
  <connections/>
 </ui>

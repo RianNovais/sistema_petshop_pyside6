@@ -1,0 +1,17 @@
+# Arquivos gerados pelo Python
+*.pyc
+__pycache__/
+
+# Ambiente virtual Python (ex: virtualenv, pipenv, etc.)
+venv/
+env/
+
+# Arquivos de configuração
+*.env
+.env
+
+# Arquivos de log
+*.log
+
+# Cache de dependências
+.pycache/

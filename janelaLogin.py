@@ -10,7 +10,10 @@ class LoginDialog(QDialog, Ui_Dialog):
     def __init__(self, parent = None):
         super().__init__(parent)
         self.setupUi(self)
+
+        #Estilizações
         self.setWindowTitle('Login')
+
 
         #aqui instanciamos uma janela principal como atributo da janela de login, ela só sera exibida
         #se o usuário conseguir logar

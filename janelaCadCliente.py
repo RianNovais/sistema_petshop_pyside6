@@ -2,7 +2,9 @@ from qtDesignFiles.janela_cadCliente import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow
 from janelaPrincipal import PrincipalWindow
 
+from dados import listaClientes, listaAnimais
 from cliente import Cliente
+
 
 
 class ClienteWindow(QMainWindow, Ui_MainWindow):
@@ -10,7 +12,7 @@ class ClienteWindow(QMainWindow, Ui_MainWindow):
         super().__init__(parent)
         self.setupUi(self)
         self.setWindowTitle('Cadastro de Clientes')
-        self.principalWindow = PrincipalWindow()
+        self.parent = parent #essa parent é a janela pai, que no caso é a nossa janela principal
 
         self.listaCidades = ['Teste1','Teste2']
         self.cbCidade.addItems(self.listaCidades)
@@ -19,14 +21,15 @@ class ClienteWindow(QMainWindow, Ui_MainWindow):
         self.btnCadCliente.clicked.connect(self.cadastrarCliente)
     def voltarPaginaPrincipal(self):
         self.close()
-        self.principalWindow.show()
+        self.parent.show()
 
     def cadastrarCliente(self):
-        c = Cliente
-        self.inputNome.text()
-        self.inputSobrenome.text()
-        self.inputCpf.text()
-        self.inputEstado.text()
-        self.cbCidade.currentText()
-        self.inputEndereco.text()
+        nome = self.inputNome.text()
+        sobrenome = self.inputSobrenome.text()
+        cpf = self.inputCpf.text()
+        estado = self.inputEstado.text()
+        cidade = self.cbCidade.currentText()
+        endereco = self.inputEndereco.text()
+        c = Cliente(nome, sobrenome, endereco, cpf, estado, cidade, endereco)
+        listaClientes.append(c)
 

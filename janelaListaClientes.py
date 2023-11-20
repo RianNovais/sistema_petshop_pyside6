@@ -6,13 +6,13 @@ class ListClienteWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent = None):
         super().__init__(parent)
         self.setupUi(self)
+        self.parent = parent #é a janela pai, principal window
 
-        self.principalWindow = PrincipalWindow()
 
         self.btnVoltar.clicked.connect(self.voltarPaginaPrincipal)
 
     def voltarPaginaPrincipal(self):
         self.close()
-        self.principalWindow.show()
+        self.parent.show()
 
 

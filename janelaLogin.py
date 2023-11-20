@@ -17,7 +17,7 @@ class LoginDialog(QDialog, Ui_Dialog):
 
         #aqui instanciamos uma janela principal como atributo da janela de login, ela só sera exibida
         #se o usuário conseguir logar
-        self.janelaPrincipal = PrincipalWindow()
+        self.janelaPrincipal = PrincipalWindow(self)
 
         #conectando o botão a função de verificar os campos do login, que verificará se os campos estão vazios
         #e se os campos de senha e login estão corretos

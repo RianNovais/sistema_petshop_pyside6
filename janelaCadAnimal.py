@@ -3,7 +3,7 @@ from PySide6.QtWidgets import QMainWindow
 from janelaPrincipal import PrincipalWindow
 
 from animal import Animal
-from dados import listaAnimais
+
 
 class AnimalWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent = None):
@@ -27,6 +27,7 @@ class AnimalWindow(QMainWindow, Ui_MainWindow):
         idade = self.inputIdade.text()
         tutor = self.cbTutor.currentText()
         a = Animal(nome, tipo, raça, idade, tutor)
-        listaAnimais.append(a)
+        self.parent.listaAnimais.append(a)
+
 
 

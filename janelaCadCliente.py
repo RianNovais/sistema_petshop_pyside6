@@ -2,10 +2,7 @@ from qtDesignFiles.janela_cadCliente import Ui_MainWindow
 from PySide6.QtWidgets import QMainWindow
 from janelaPrincipal import PrincipalWindow
 
-from dados import listaClientes, listaAnimais
 from cliente import Cliente
-
-
 
 class ClienteWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent = None):
@@ -30,6 +27,8 @@ class ClienteWindow(QMainWindow, Ui_MainWindow):
         estado = self.inputEstado.text()
         cidade = self.cbCidade.currentText()
         endereco = self.inputEndereco.text()
-        c = Cliente(nome, sobrenome, endereco, cpf, estado, cidade, endereco)
-        listaClientes.append(c)
+        c = Cliente(nome, sobrenome, cpf, estado, cidade, endereco)
+        self.parent.listaClientes.append(c)
+        print(self.parent.listaClientes)
+        print('Cliente adicionado com sucesso')
 

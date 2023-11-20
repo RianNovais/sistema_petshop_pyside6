@@ -18,6 +18,8 @@ class PrincipalWindow(QMainWindow, Ui_MainWindow):
         self.janelaCadAnimal = None
         self.janelaListAnimal = None
 
+        self.listaClientes = []
+        self.listaAnimais = []
 
         #estabelecendo a conexão entre o signal de click em cada botão, com o devido slot, cada um desses slots
         #tem a função de fechar a janela atual e abrir uma nova janela, respectivamente
